@@ -1,0 +1,29 @@
+{
+  "name": "awesome-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "ava",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "dev": "chokidar '**/*.js' -c 'standard && ava'"
+  },
+  "pre-commit": [
+    "test",
+    "lint",
+    "lint-fix"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "chokidar-cli": "^1.2.1",
+    "express": "^4.16.3",
+    "require": "^2.4.20",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {}
+}
